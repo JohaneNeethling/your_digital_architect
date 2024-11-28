@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"; // Import necessary hooks from React
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import Router components for navigation
 import Navigation from "./components/Navigation"; // Navigation component for header
-import IntroScreen from "./components/IntroScreen"; // Intro screen shown on load
 import HeroSection from "./components/HeroSection"; // Hero section of the page
 import BioSection from "./components/BioSection"; // Biography section
 import SkillsSection from "./components/Skills"; // Skills section
@@ -13,14 +12,12 @@ import DocumentsSection from "./components/DocumentsSection"; // Section for doc
 
 const App = () => {
   // State hooks for various features
-  const [showIntro, setShowIntro] = useState(true); // Controls whether the intro screen is shown
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 }); // Tracks the current mouse position
   const [previousMousePosition, setPreviousMousePosition] = useState({
     x: 0,
     y: 0,
   }); // Tracks the previous mouse position to detect movement direction
   const [beePosition, setBeePosition] = useState({ x: 0, y: 0 }); // Position of the bee cursor
-  const [beeVelocity, setBeeVelocity] = useState({ x: 0, y: 0 }); // Velocity of the bee movement
   const [isFlipped, setIsFlipped] = useState(false); // Whether the bee cursor is flipped horizontally
 
   // Handle mouse movement
@@ -87,62 +84,55 @@ const App = () => {
 
       {/* Router Setup for page navigation */}
       <Router>
-        <div className="relative min-h-screen">
-          {/* Main container with full screen height */}
-          {showIntro ? (
-            <IntroScreen onComplete={() => setShowIntro(false)} /> // Display intro screen if showIntro is true
-          ) : (
-            <Routes>
-              <Route
-                path="/home"
-                element={
-                  <>
-                    <Navigation />
-                    <HeroSection />
-                    <BioSection />
-                    <SkillsSection />
-                    <DocumentsSection />
-                    <Contact />
-                    <Footer />
-                  </>
-                }
-              />
-              <Route
-                path="/whyme"
-                element={
-                  <>
-                    <Navigation />
-                    <BioSection />
-                    <SkillsSection />
-                    <DocumentsSection />
-                    <Footer />
-                  </>
-                }
-              />
-              <Route
-                path="/portfolio"
-                element={
-                  <>
-                    <Navigation />
-                    <PortfolioSection />
-                    <DocumentsSection />
-                    <Footer />
-                  </>
-                }
-              />
-              <Route
-                path="/getintouch"
-                element={
-                  <>
-                    <Navigation />
-                    <Contact />
-                    <Footer />
-                  </>
-                }
-              />
-            </Routes>
-          )}
-        </div>
+        <Routes>
+          <Route
+            path="/home"
+            element={
+              <>
+                <Navigation />
+                <HeroSection />
+                <BioSection />
+                <SkillsSection />
+                <DocumentsSection />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/whyme"
+            element={
+              <>
+                <Navigation />
+                <BioSection />
+                <SkillsSection />
+                <DocumentsSection />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/portfolio"
+            element={
+              <>
+                <Navigation />
+                <PortfolioSection />
+                <DocumentsSection />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/getintouch"
+            element={
+              <>
+                <Navigation />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
       </Router>
     </div>
   );
