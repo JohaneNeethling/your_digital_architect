@@ -97,7 +97,7 @@ const App = () => {
               {/* Main content of the website, rendered based on the route */}
               <Routes>
                 <Route
-                  path="/"
+                  path="/home"
                   element={
                     <div>
                       <Navigation /> {/* Navigation component */}
@@ -111,7 +111,7 @@ const App = () => {
                   }
                 />
                 <Route
-                  path="/skills"
+                  path="/whyme"
                   element={
                     <>
                       <Navigation />
@@ -134,7 +134,7 @@ const App = () => {
                   }
                 />
                 <Route
-                  path="/contactme"
+                  path="/getintouch"
                   element={
                     <>
                       <Navigation />

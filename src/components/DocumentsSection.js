@@ -52,7 +52,7 @@ const DocumentsSection = () => {
 
         {/* Action Links Section */}
         <motion.div
-          className="flex flex-wrap justify-center mt-12 space-x-4 sm:space-x-8" // Container for action links with spacing
+          className="flex flex-wrap justify-center mt-12 space-x-8 sm:space-x-8" // Container for action links with spacing
           initial={{ opacity: 0 }} // Initial opacity for animation
           animate={{ opacity: 1 }} // Final opacity for animation
           transition={{ duration: 1.2, delay: 0.8, ease: "easeInOut" }} // Animation timing

@@ -73,11 +73,11 @@ const PortfolioSection = () => {
 
   return (
     <div>
-      <div className="bg-black text-white py-16 px-6 sm:px-12 md:px-24 font-noto">
+      <div className="bg-black text-white py-16 px-6 sm:px-12 md:px-24 font-noto pt-28">
         <div className="max-w-6xl mx-auto">
           {/* Heading for the Portfolio Section */}
           <motion.h2
-            className="text-xl sm:text-4xl md:text-8xl font-extrabold font-noto mb-12 text-center text-blue-700 tracking-widest mt-7"
+            className="text-xl sm:text-8xl md:text-8xl font-extrabold font-noto mb-12 text-center text-blue-700 tracking-widest mt-7"
             initial={{ opacity: 0, y: -50 }} // Initial animation state
             animate={{ opacity: 1, y: 0 }} // Final animation state
             transition={{ duration: 1 }} // Transition timing
