@@ -1,9 +1,16 @@
 import React from "react"; // Importing React library to build components
 import { ReactTyped as Typed } from "react-typed"; // Importing the Typed component for typing animation
 import { motion } from "framer-motion"; // Importing motion from framer-motion for animation effects
+import { useNavigate } from "react-router-dom"; // Importing useNavigate for programmatic navigation
 
 // The IntroScreen component accepts an 'onComplete' prop, which is called when the animation completes
-const IntroScreen = ({ onComplete }) => {
+const IntroScreen = () => {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
+  const handleAnimationComplete = () => {
+    navigate("/"); // Navigate to the / route after animation completes
+  };
+
   return (
     <motion.div
       // Initial state of the div (fully visible)
@@ -12,8 +19,8 @@ const IntroScreen = ({ onComplete }) => {
       animate={{ opacity: 0 }}
       // Define the transition with a 4-second delay and 1-second duration for fading out
       transition={{ delay: 4, duration: 1 }}
-      // Calls the onComplete function passed as a prop once the animation finishes
-      onAnimationComplete={onComplete}
+      // Calls the handleAnimationComplete function once the animation finishes
+      onAnimationComplete={handleAnimationComplete}
       // Styling for the div: center the content, set background color, and apply large text
       className="flex items-center justify-center min-h-screen bg-black text-white font-noto text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
     >
