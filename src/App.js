@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react"; // Import necessary hooks from React
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import Router components for navigation
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom"; // Import Router components for navigation
 import Navigation from "./components/Navigation"; // Navigation component for header
 import HeroSection from "./components/HeroSection"; // Hero section of the page
 import BioSection from "./components/BioSection"; // Biography section
@@ -132,6 +137,8 @@ const App = () => {
               </>
             }
           />
+          {/* Default Route Redirect to /home */}
+          <Route path="/" element={<Navigate to="/home" />} />
         </Routes>
       </Router>
     </div>
