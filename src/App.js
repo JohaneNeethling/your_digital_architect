@@ -65,22 +65,22 @@ const App = () => {
     <div onMouseMove={handleMouseMove}>
       {/* Custom Animated Bee Cursor */}
       <div
-        className="fixed z-50 pointer-events-none" // Fixed positioning for cursor with no pointer events
+        className="fixed z-50 pointer-events-none"
         style={{
-          left: `${beePosition.x - 30}px`, // Adjust the left position of the bee
-          top: `${beePosition.y - 30}px`, // Adjust the top position of the bee
-          transition: "transform 0.1s ease", // Smooth transition for bee's movement
+          left: `${beePosition.x - 30}px`,
+          top: `${beePosition.y - 30}px`,
+          transition: "transform 0.1s ease",
         }}
       >
         <img
-          src={bee} // Image of the bee
-          alt="Bee" // Alt text for the image
-          className="w-11 h-11 transform" // Set width, height and transformation styles
+          src={bee}
+          alt="Bee"
+          className="w-11 h-11 transform"
           style={{
             transform: `scale(${Math.random() * 0.5 + 1.2}) rotate(${
               Math.random() * 30 - 15
-            }deg) ${isFlipped ? "scaleX(-1)" : ""}`, // Random scaling and rotation, and flip if necessary
-            transition: "transform 0.2s ease-out", // Smooth transform on mouse movement
+            }deg) ${isFlipped ? "scaleX(-1)" : ""}`,
+            transition: "transform 0.2s ease-out",
           }}
         />
       </div>
@@ -88,63 +88,59 @@ const App = () => {
       {/* Router Setup for page navigation */}
       <Router>
         <div className="relative min-h-screen">
-          {" "}
           {/* Main container with full screen height */}
           {showIntro ? (
             <IntroScreen onComplete={() => setShowIntro(false)} /> // Display intro screen if showIntro is true
           ) : (
-            <>
-              {/* Main content of the website, rendered based on the route */}
-              <Routes>
-                <Route
-                  path="/home"
-                  element={
-                    <div>
-                      <Navigation /> {/* Navigation component */}
-                      <HeroSection /> {/* Hero section of the website */}
-                      <BioSection /> {/* Biography section */}
-                      <SkillsSection /> {/* Skills section */}
-                      <DocumentsSection /> {/* Documents section */}
-                      <Contact /> {/* Contact section */}
-                      <Footer /> {/* Footer component */}
-                    </div>
-                  }
-                />
-                <Route
-                  path="/whyme"
-                  element={
-                    <>
-                      <Navigation />
-                      <BioSection />
-                      <SkillsSection />
-                      <DocumentsSection />
-                      <Footer />
-                    </>
-                  }
-                />
-                <Route
-                  path="/portfolio"
-                  element={
-                    <>
-                      <Navigation />
-                      <PortfolioSection />
-                      <DocumentsSection />
-                      <Footer />
-                    </>
-                  }
-                />
-                <Route
-                  path="/getintouch"
-                  element={
-                    <>
-                      <Navigation />
-                      <Contact />
-                      <Footer />
-                    </>
-                  }
-                />
-              </Routes>
-            </>
+            <Routes>
+              <Route
+                path="/home"
+                element={
+                  <>
+                    <Navigation />
+                    <HeroSection />
+                    <BioSection />
+                    <SkillsSection />
+                    <DocumentsSection />
+                    <Contact />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/whyme"
+                element={
+                  <>
+                    <Navigation />
+                    <BioSection />
+                    <SkillsSection />
+                    <DocumentsSection />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/portfolio"
+                element={
+                  <>
+                    <Navigation />
+                    <PortfolioSection />
+                    <DocumentsSection />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/getintouch"
+                element={
+                  <>
+                    <Navigation />
+                    <Contact />
+                    <Footer />
+                  </>
+                }
+              />
+            </Routes>
           )}
         </div>
       </Router>
