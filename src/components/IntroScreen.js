@@ -8,7 +8,7 @@ const IntroScreen = () => {
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
   const handleAnimationComplete = () => {
-    navigate("/"); // Navigate to the / route after animation completes
+    navigate("/home"); // Navigate to the / route after animation completes
   };
 
   return (
