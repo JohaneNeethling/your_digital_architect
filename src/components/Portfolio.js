@@ -35,7 +35,7 @@ const projects = [
     description:
       "Established in 1984, Neethling Ingenieurs have proudly served as the professional choice for steel construction in the Boland and Overberg regions for over 40 years.",
     image: NeetLogo,
-    link: "https://neethling-ingenieurs-wcm4.onrender.com",
+    link: "https://neethling-ingenieurs-staal.onrender.com/",
   },
   {
     title: "Jean-Andre du Plessis",
