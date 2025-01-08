@@ -1,14 +1,37 @@
-import React from "react";
-import { motion } from "framer-motion"; // Importing motion from framer-motion for animations
-import BeeBG2 from "../assets/BeeBg2.png"; // Importing an image to be used in the section
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser"; // Import EmailJS
+import BeeBG2 from "../assets/BeeBg2.png";
 
 const ContactSection = () => {
+  const formRef = useRef(); // Reference to the form element
+
+  const sendEmail = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    emailjs
+      .sendForm(
+        "service_g8mimka",
+        "template_jqx1kx9",
+        formRef.current,
+        "CIpOqlUdF4dfWwyxR"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          alert("Failed to send the message. Please try again.");
+        }
+      );
+    e.target.reset(); // Reset the form fields after submission
+  };
+
   return (
     <>
-      {/* Main Contact Section */}
       <div className="relative min-h-screen bg-black text-white overflow-hidden pt-11">
-        {/* Scrolling "SAY HELLO" Section */}
-        <div className="relative w-full bg-black ">
+        <div className="relative w-full bg-black">
           <motion.div
             className="absolute top-0 w-full text-center text-6xl sm:text-8xl font-bold tracking-widest text-white whitespace-nowrap font-noto mt-16"
             animate={{
@@ -24,13 +47,12 @@ const ContactSection = () => {
           </motion.div>
         </div>
         <div className="relative z-10 min-h-screen flex flex-col sm:flex-row items-center justify-center px-6 sm:px-32 mt-36">
-          {/* Contact Text Section */}
           <div className="w-full sm:w-1/2 flex flex-col justify-center">
             <motion.p
               className="text-lg sm:text-2xl mt-4 font-noto"
-              initial={{ opacity: 0, y: 20 }} // Initial animation properties (opacity and vertical position)
-              animate={{ opacity: 1, y: 0 }} // Final animation properties (fully visible and at normal position)
-              transition={{ duration: 1.5, delay: 0.9 }} // Controls the animation speed and delay
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5, delay: 0.9 }}
             >
               I believe in the power of collaboration and creativity to build
               meaningful digital solutions. Whether you're looking to start a
@@ -42,35 +64,42 @@ const ContactSection = () => {
             </motion.p>
           </div>
 
-          {/* Contact Form Section */}
           <div className="w-full sm:w-1/2 flex flex-col justify-center sm:ml-8 mt-8 sm:mt-0">
             <motion.form
-              initial={{ opacity: 0, y: 50 }} // Form starts off invisible and slightly lower
-              animate={{ opacity: 1, y: 0 }} // Form animates to full opacity and its normal position
-              transition={{ duration: 1, delay: 0.2 }} // Controls the form's animation speed and delay
+              ref={formRef} // Attach the form reference
+              onSubmit={sendEmail} // Handle form submission
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
               className="space-y-6"
             >
               <div>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Name"
                   className="w-full p-4 bg-transparent text-white border-b-2 focus:outline-none"
+                  required
                 />
               </div>
 
               <div>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Your Email"
                   className="w-full p-4 bg-transparent text-white border-b-2 focus:outline-none"
+                  required
                 />
               </div>
 
               <div>
                 <textarea
+                  name="message"
                   placeholder="Your Message"
                   className="w-full p-4 bg-transparent text-white border-b-2 focus:outline-none"
                   rows="4"
+                  required
                 />
               </div>
 
@@ -87,7 +116,6 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Image of the bee */}
         <div className="absolute bottom-8 left-8">
           <img src={BeeBG2} alt="Bee" className="w-44 h-24 sm:w-52 sm:h-28" />
         </div>

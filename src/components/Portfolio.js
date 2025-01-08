@@ -10,37 +10,38 @@ import BeeBG3 from "../assets/BeeBg3.png";
 // Array of project objects, each with title, description, image, and link
 const projects = [
   {
+    title: "BoomBox",
+    description:
+      "Allows users to play audio, save media to a favorites list, and log in and out for a personalized experience. Featuring smooth animations, pagination for efficient navigation, and a dynamic design, the project demonstrates strong frontend and user authentication skills.",
+    image: BoomBoxLogo,
+    link: "https://boombox-1.onrender.com",
+  },
+  {
     title: "Yene van Jaarsveldt",
     description:
-      "A passionate and qualified Architectural Technology Draftswoman, driven by a desire to create sustainable, environmentally conscious designs.",
+      "Built with React and styled using Tailwind CSS, features a project gallery, a blog system for updates, and a functional contact form. Its elegant design, smooth animations, and backend integration highlight a strong focus on user experience and functionality.",
     image: Plans,
     link: "https://yene-van-jaarsveldt.onrender.com",
   },
   {
     title: "Twenty One Magazine",
     description:
-      "Twenty One Magazine is packed with fun, informative, and inspiring content to help readers grow, learn, and feel empowered every month.",
+      "Features a fun, girly design and includes interactive elements like a quiz that displays results upon submission. It also incorporates a functional TikTok-style media player, showcasing strong UI design and interactive development skills.",
     image: TLogo,
     link: "https://twenty-one-magazine.onrender.com",
   },
-  {
-    title: "BoomBox",
-    description:
-      "A vibrant multi-media app that can save these medias, as well as play tracks.",
-    image: BoomBoxLogo,
-    link: "#",
-  },
+
   {
     title: "Neethling Ingenieurs",
     description:
-      "Established in 1984, Neethling Ingenieurs have proudly served as the professional choice for steel construction in the Boland and Overberg regions for over 40 years.",
+      "Professional steel construction website features a clean design with a refined color palette, smooth animations, and transitions. Its concise layout and polished aesthetic highlight attention to detail and a focus on user experience.",
     image: NeetLogo,
     link: "https://neethling-ingenieurs-staal.onrender.com/",
   },
   {
     title: "Jean-Andre du Plessis",
     description:
-      "Curriculum Vitae of a 26-year-old results-driven professional.",
+      "Professional CV website features an advanced design with a sleek color palette and an intuitive layout. It includes a day and night mode for enhanced user experience, showcasing both design skills and attention to detail.",
     image: JeanAndre,
     link: "https://jean-andre-cv.onrender.com/",
   },
