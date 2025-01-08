@@ -37,11 +37,11 @@ const BioSection = () => {
               transition={{ duration: 1.5, delay: 0.9 }} // Duration and delay for the animation
             >
               As a passionate software developer, I graduated at the top of my
-              class after being honored with a bursary to pursue my career.
-              Today, I am a skilled full stack developer, proficient in both
-              front-end and back-end technologies. With a strong foundation in
-              problem-solving and innovative thinking, I specialize in creating
-              seamless, user-centric digital solutions.
+              class with a 99% grade average after being honored with a bursary
+              to pursue my career. Today, I am a skilled full stack developer,
+              proficient in both front-end and back-end technologies. With a
+              strong foundation in problem-solving and innovative thinking, I
+              specialize in creating seamless, user-centric digital solutions.
             </motion.p>
             {/* Bio paragraph with animated entrance */}
 
