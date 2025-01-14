@@ -3,12 +3,12 @@ import { motion } from "framer-motion"; // Import motion from framer-motion for 
 
 const Footer = () => {
   return (
-    <div className="relative bg-gray-900 text-white py-5">
+    <div className="relative bg-black text-white py-5">
       {" "}
       {/* Outer container for the footer */}
       {/* Background Animation: Using motion to animate a gradient background */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-indigo-700 via-blue-500 to-purple-600 opacity-50"
+        className="absolute inset-0 bg-black opacity-50"
         animate={{
           scale: [1, 1.05, 1], // Scale animation (zoom in and out effect)
           opacity: [0.3, 0.6, 0.3], // Fade in and out effect
@@ -38,10 +38,10 @@ const Footer = () => {
         >
           {/* LinkedIn Icon */}
           <motion.a
-            href="https://www.linkedin.com/in/johane-neethling-474179321/"
+            href="https://www.linkedin.com/in/johane-neethling"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-blue-500 text-2xl transition-transform duration-300 ease-out"
+            className="text-gray-300 hover:text-custom-light text-2xl transition-transform duration-300 ease-out"
             whileHover={{ scale: 1.2 }} // Increase size on hover
             whileTap={{ scale: 0.9 }} // Decrease size on tap
           >
@@ -53,23 +53,11 @@ const Footer = () => {
             href="https://github.com/JohaneNeethling"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-blue-500 text-2xl transition-transform duration-300 ease-out"
+            className="text-gray-300 hover:text-custom-light text-2xl transition-transform duration-300 ease-out"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
             <i className="fab fa-github"></i> {/* GitHub icon */}
-          </motion.a>
-
-          {/* Instagram Icon */}
-          <motion.a
-            href="https://www.instagram.com/johane_neethling/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-blue-500 text-2xl transition-transform duration-300 ease-out"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <i className="fab fa-instagram"></i> {/* Instagram icon */}
           </motion.a>
 
           {/* Portfolio Link */}
@@ -77,7 +65,7 @@ const Footer = () => {
             href="https://www.hyperiondev.com/portfolio/322818/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-blue-500 text-xl transition-transform duration-300 ease-out"
+            className="text-gray-300 hover:text-custom-light text-xl transition-transform duration-300 ease-out"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -89,7 +77,7 @@ const Footer = () => {
             href="https://www.hyperiondev.com/certificate/6025/certificate-of-completion?intent=view"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-blue-500 text-xl transition-transform duration-300 ease-out"
+            className="text-gray-300 hover:text-custom-light text-xl transition-transform duration-300 ease-out"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >

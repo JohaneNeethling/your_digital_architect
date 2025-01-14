@@ -54,13 +54,22 @@ const ContactSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 0.9 }}
             >
-              I believe in the power of collaboration and creativity to build
-              meaningful digital solutions. Whether you're looking to start a
-              new project, enhance an existing one, or simply discuss ideas, I'm
+              I believe in the power of{" "}
+              <strong className="text-custom-light">
+                collaboration and creativity
+              </strong>{" "}
+              to build meaningful digital solutions. Whether you're looking to
+              start a <strong className="text-custom-light">new</strong>{" "}
+              project, <strong className="text-custom-light">enhance</strong> an
+              existing one, or simply{" "}
+              <strong className="text-custom-light">discuss ideas</strong>, I'm
               here to help. As a dedicated full-stack developer, I bring a
-              combination of technical expertise and a user-centric approach to
-              every project. Feel free to reach out—I’d love to learn more about
-              your goals and how we can bring them to life together.
+              combination of{" "}
+              <strong className="text-custom-light">technical expertise</strong>{" "}
+              and a <strong className="text-custom-light">user-centric</strong>{" "}
+              approach to every project. Feel free to reach out—I’d love to
+              learn more about your goals and how we can bring them to life{" "}
+              <strong className="text-custom-light">together</strong>.
             </motion.p>
           </div>
 
@@ -108,7 +117,7 @@ const ContactSection = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.4 }}
                 type="submit"
-                className="w-full py-4 mt-6 rounded-md font-noto text-white border-2 border-white text-xl font-semibold hover:text-blue-700 hover:border-blue-700 transition duration-300"
+                className="w-full py-4 mt-6 rounded-md font-noto text-white border-2 border-white text-xl font-semibold hover:text-custom-light hover:border-custom-light transition duration-300"
               >
                 Send Message
               </motion.button>

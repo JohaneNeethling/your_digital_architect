@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         noto: ["'Noto Serif Display'", "serif"],
       },
+      colors: {
+        "custom-light": "#E6CF9B",
+      },
     },
   },
   plugins: [],

@@ -24,7 +24,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="relative min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-blue-100 dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black overflow-hidden">
+      <div className="relative min-h-screen dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black overflow-hidden">
         {/* Dynamic animated background */}
         <motion.div
           className="absolute inset-0 bg-no-repeat bg-cover" // Apply background cover
@@ -62,7 +62,7 @@ const HeroSection = () => {
           <motion.h1
             whileHover={{ scale: 1.1 }} // Scale the text up on hover
             transition={{ type: "spring", stiffness: 300 }} // Spring-based transition for smooth scaling
-            className="text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-noto tracking-widest font-extrabold text-blue-700"
+            className="text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-noto tracking-widest font-extrabold text-custom-light"
           >
             DIGITAL HOME
           </motion.h1>

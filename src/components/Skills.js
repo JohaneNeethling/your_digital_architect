@@ -8,15 +8,16 @@ const skills = [
     description: (
       <>
         I have extensive experience in building interactive and scalable user
-        interfaces using <strong className="text-blue-700">React</strong>, a
-        powerful <strong className="text-blue-700">JavaScript</strong> library.
-        By leveraging <strong className="text-blue-700">Tailwind CSS</strong>, I
-        create custom, responsive designs that ensure an optimized user
-        experience on all devices. I am proficient in using{" "}
-        <strong className="text-blue-700">Grid and Flexbox</strong> layouts to
-        construct flexible, mobile-first designs, ensuring that the application
-        looks great and functions smoothly across various screen sizes and
-        devices.
+        interfaces using <strong className="text-custom-light">React</strong>, a
+        powerful <strong className="text-custom-light">JavaScript</strong>{" "}
+        library. By leveraging{" "}
+        <strong className="text-custom-light">Tailwind CSS</strong>, I create
+        custom, responsive designs that ensure an optimized user experience on
+        all devices. I am proficient in using{" "}
+        <strong className="text-custom-light">Grid and Flexbox</strong> layouts
+        to construct flexible, mobile-first designs, ensuring that the
+        application looks great and functions smoothly across various screen
+        sizes and devices.
       </>
     ),
   },
@@ -24,14 +25,15 @@ const skills = [
     title: "Application Logic Development",
     description: (
       <>
-        On the backend, I use <strong className="text-blue-700">Node.js</strong>{" "}
-        to develop efficient and scalable server-side applications, ensuring
-        robust performance even under heavy traffic. I integrate{" "}
-        <strong className="text-blue-700">MongoDB</strong> for NoSQL data
+        On the backend, I use{" "}
+        <strong className="text-custom-light">Node.js</strong> to develop
+        efficient and scalable server-side applications, ensuring robust
+        performance even under heavy traffic. I integrate{" "}
+        <strong className="text-custom-light">MongoDB</strong> for NoSQL data
         storage, creating highly flexible and scalable databases. Additionally,
         I design and implement{" "}
-        <strong className="text-blue-700">RESTful APIs</strong>, allowing smooth
-        communication between the frontend and backend of applications,
+        <strong className="text-custom-light">RESTful APIs</strong>, allowing
+        smooth communication between the frontend and backend of applications,
         facilitating data exchange and enhancing overall functionality.
       </>
     ),
@@ -42,11 +44,11 @@ const skills = [
       <>
         I prioritize mobile-first design principles to ensure every project is
         fully mobile-responsive. By using modern CSS techniques and frameworks
-        like <strong className="text-blue-700">Tailwind CSS</strong>, I create
-        websites and applications that adapt seamlessly to all screen sizes,
-        providing users with an optimal experience across desktops, tablets, and
-        smartphones. My focus is on creating fluid, intuitive designs that make
-        navigating on mobile devices as easy as on desktops.
+        like <strong className="text-custom-light">Tailwind CSS</strong>, I
+        create websites and applications that adapt seamlessly to all screen
+        sizes, providing users with an optimal experience across desktops,
+        tablets, and smartphones. My focus is on creating fluid, intuitive
+        designs that make navigating on mobile devices as easy as on desktops.
       </>
     ),
   },
@@ -55,11 +57,11 @@ const skills = [
     description: (
       <>
         In addition to coding, I have a strong background in{" "}
-        <strong className="text-blue-700">UI design</strong>, where I focus on
-        crafting clean, modern, and user-friendly interfaces that enhance the
+        <strong className="text-custom-light">UI design</strong>, where I focus
+        on crafting clean, modern, and user-friendly interfaces that enhance the
         user experience. I place a strong emphasis on{" "}
-        <strong className="text-blue-700">UX strategy</strong>, ensuring that
-        the applications I build are intuitive and easy to use. I use
+        <strong className="text-custom-light">UX strategy</strong>, ensuring
+        that the applications I build are intuitive and easy to use. I use
         prototyping and wireframing tools to visualize the structure of the
         application and create interactive prototypes for client review,
         streamlining the design process and improving user interaction.
@@ -71,14 +73,14 @@ const skills = [
     description: (
       <>
         I am proficient in using{" "}
-        <strong className="text-blue-700">GitHub</strong> for version control
-        and collaboration. By leveraging{" "}
-        <strong className="text-blue-700">Git</strong>, I can efficiently manage
-        code, track changes, and ensure that the development process is smooth
-        and well-documented. This allows me to collaborate effectively with
-        teams, maintain clean code, and manage deployments, ensuring that the
-        development workflow remains organized and efficient, even in larger,
-        more complex projects.
+        <strong className="text-custom-light">GitHub</strong> for version
+        control and collaboration. By leveraging{" "}
+        <strong className="text-custom-light">Git</strong>, I can efficiently
+        manage code, track changes, and ensure that the development process is
+        smooth and well-documented. This allows me to collaborate effectively
+        with teams, maintain clean code, and manage deployments, ensuring that
+        the development workflow remains organized and efficient, even in
+        larger, more complex projects.
       </>
     ),
   },
@@ -87,7 +89,7 @@ const skills = [
     description: (
       <>
         In addition to my technical expertise, I offer{" "}
-        <strong className="text-blue-700">
+        <strong className="text-custom-light">
           copywriting and graphic design skills
         </strong>
         , which allow me to bring a creative touch to every project. I write

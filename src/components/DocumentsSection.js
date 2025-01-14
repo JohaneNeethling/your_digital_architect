@@ -32,7 +32,7 @@ const DocumentsSection = () => {
           transition={{ duration: 1.5, ease: "easeInOut" }} // Animation duration and easing
           className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-widest text-white"
         >
-          A Journey of Excellence
+          A Journey of <strong className="text-custom-light">Excellence</strong>
         </motion.h2>
 
         {/* Paragraph with animation */}
@@ -42,12 +42,16 @@ const DocumentsSection = () => {
           transition={{ duration: 1.2, delay: 0.5, ease: "easeInOut" }} // Animation duration, delay, and easing
           className="mt-4 text-lg sm:text-xl md:text-2xl text-gray-200 font-bold"
         >
-          From the very first line of code to the final project, my journey at
-          HyperionDev, South Africa's leading coding school, has been nothing
-          short of remarkable. Graduating with a 99% average, I’ve proven that
-          hard work, dedication, and passion can turn aspirations into reality.
-          But don’t just take my word for it—take a peek at the proof below and
-          see the results for yourself.
+          From the very first line of code to the final project, my journey at{" "}
+          <strong className="text-custom-light">
+            HyperionDev, South Africa's leading coding school
+          </strong>
+          , has been nothing short of remarkable. Graduating with a{" "}
+          <strong className="text-custom-light">99% average</strong>, I’ve
+          proven that hard work, dedication, and passion can turn aspirations
+          into reality. But don’t just take my word for it—take a peek at the
+          proof <strong className="text-custom-light">below</strong> and see the
+          results for yourself.
         </motion.p>
 
         {/* Action Links Section */}
@@ -62,11 +66,11 @@ const DocumentsSection = () => {
             href="https://www.hyperiondev.com/portfolio/322818/" // Link to the report card
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-indigo-900 hover:bg-indigo-700 text-white py-3 px-6 sm:px-8 rounded-lg text-lg font-semibold transform transition-all duration-300 ease-in-out shadow-lg hover:scale-105"
+            className="bg-black hover:bg-custom-light border-custom-light border-2 text-white py-3 px-6 sm:px-8 rounded-lg text-lg font-semibold transform transition-all duration-300 ease-in-out shadow-lg hover:scale-105"
             whileHover={{ scale: 1.05 }} // Slightly scale up on hover
             whileTap={{ scale: 0.95 }} // Slightly scale down on tap (click)
           >
-            View My Report Card
+            Report Card
           </motion.a>
 
           {/* Certificate Link */}
@@ -74,11 +78,35 @@ const DocumentsSection = () => {
             href="https://www.hyperiondev.com/certificate/6025/certificate-of-completion?intent=view" // Link to the certificate
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-indigo-900 hover:bg-indigo-700 text-white py-3 px-6 sm:px-8 rounded-lg text-lg font-semibold transform transition-all duration-300 ease-in-out shadow-lg hover:scale-105"
+            className="bg-black hover:bg-custom-light border-custom-light border-2 text-white py-3 px-6 sm:px-8 rounded-lg text-lg font-semibold transform transition-all duration-300 ease-in-out shadow-lg hover:scale-105"
             whileHover={{ scale: 1.05 }} // Hover scale animation
             whileTap={{ scale: 0.95 }} // Tap scale animation
           >
-            View My Certificate
+            Certification
+          </motion.a>
+
+          {/* Certificate Link */}
+          <motion.a
+            href="https://github.com/JohaneNeethling" // Link to GitHub
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black hover:bg-custom-light border-custom-light border-2 text-white py-3 px-6 sm:px-8 rounded-lg text-lg font-semibold transform transition-all duration-300 ease-in-out shadow-lg hover:scale-105"
+            whileHover={{ scale: 1.05 }} // Hover scale animation
+            whileTap={{ scale: 0.95 }} // Tap scale animation
+          >
+            GitHub
+          </motion.a>
+
+          {/* Certificate Link */}
+          <motion.a
+            href="https://www.linkedin.com/in/johane-neethling/" // Link to LinkedIn
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black hover:bg-custom-light border-custom-light border-2 text-white py-3 px-6 sm:px-8 rounded-lg text-lg font-semibold transform transition-all duration-300 ease-in-out shadow-lg hover:scale-105"
+            whileHover={{ scale: 1.05 }} // Hover scale animation
+            whileTap={{ scale: 0.95 }} // Tap scale animation
+          >
+            LinkedIn
           </motion.a>
         </motion.div>
       </div>

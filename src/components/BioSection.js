@@ -1,7 +1,7 @@
 import React from "react"; // Import React library to use JSX and components
 import { motion } from "framer-motion"; // Import motion from framer-motion for animations
 import Johane from "../assets/JohaneNeethling.jpeg"; // Import image for profile picture
-import BeeBG from "../assets/BeeBg.png"; // Import background image for the section
+import BeeBG from "../assets/BeeBg2.png"; // Import background image for the section
 
 const BioSection = () => {
   return (
@@ -21,7 +21,7 @@ const BioSection = () => {
             transition={{ duration: 1.5, delay: 0.3 }} // Animation duration and delay settings
           >
             hi there, I'm{" "}
-            <span className="block text-blue-700 text-5xl md:text-7xl font-bold font-noto">
+            <span className="block text-custom-light text-5xl md:text-7xl font-bold font-noto">
               Johane Neethling
             </span>
           </motion.h2>

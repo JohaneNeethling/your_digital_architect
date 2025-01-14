@@ -37,7 +37,7 @@ const Navigation = () => {
             (item, index) => (
               <motion.li
                 key={index}
-                className="text-white hover:text-blue-500 font-medium"
+                className="text-white hover:text-custom-light font-medium"
                 whileHover={{ scale: 1.1, y: -5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >

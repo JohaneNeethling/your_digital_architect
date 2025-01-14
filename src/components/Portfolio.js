@@ -78,7 +78,7 @@ const PortfolioSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Heading for the Portfolio Section */}
           <motion.h2
-            className="text-xl sm:text-8xl md:text-8xl font-extrabold font-noto mb-12 text-center text-blue-700 tracking-widest mt-7"
+            className="text-xl sm:text-8xl md:text-8xl font-extrabold font-noto mb-12 text-center text-custom-light tracking-widest mt-7"
             initial={{ opacity: 0, y: -50 }} // Initial animation state
             animate={{ opacity: 1, y: 0 }} // Final animation state
             transition={{ duration: 1 }} // Transition timing
@@ -143,7 +143,7 @@ const PortfolioSection = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-3 sm:px-6 sm:py-4 text-lg font-bold text-white bg-indigo-900 rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-indigo-400 hover:shadow-2xl"
+                    className="px-5 py-3 sm:px-6 sm:py-4 text-lg font-bold text-white border-custom-light border-2 bg-black rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-custom-light hover:shadow-2xl"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 }} // Button transition
