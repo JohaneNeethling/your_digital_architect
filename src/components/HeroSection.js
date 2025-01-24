@@ -24,17 +24,12 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="relative min-h-screen dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black overflow-hidden">
+      <div className="relative min-h-screen dark:bg-black overflow-hidden">
         {/* Dynamic animated background */}
         <motion.div
           className="absolute inset-0 bg-no-repeat bg-cover" // Apply background cover
           style={{
             backgroundImage: `url(${DynamicBG})`, // Set dynamic background image
-            opacity: 0.3, // Initial opacity
-          }}
-          animate={{
-            scale: [1, 1.1, 1], // Animation to scale background
-            opacity: [0.3, 0.5, 0.3], // Fade in/out effect for opacity
           }}
           transition={{
             duration: 10, // Animation duration

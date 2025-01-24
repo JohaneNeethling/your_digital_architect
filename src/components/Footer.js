@@ -3,12 +3,12 @@ import { motion } from "framer-motion"; // Import motion from framer-motion for 
 
 const Footer = () => {
   return (
-    <div className="relative bg-black text-white py-5">
+    <div className="relative bg-custom-dark text-white py-5">
       {" "}
       {/* Outer container for the footer */}
       {/* Background Animation: Using motion to animate a gradient background */}
       <motion.div
-        className="absolute inset-0 bg-black opacity-50"
+        className="absolute inset-0 bg-custom-dark opacity-50"
         animate={{
           scale: [1, 1.05, 1], // Scale animation (zoom in and out effect)
           opacity: [0.3, 0.6, 0.3], // Fade in and out effect

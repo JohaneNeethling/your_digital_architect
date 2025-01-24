@@ -30,8 +30,8 @@ const ContactSection = () => {
 
   return (
     <>
-      <div className="relative min-h-screen bg-black text-white overflow-hidden pt-11">
-        <div className="relative w-full bg-black">
+      <div className="relative min-h-screen bg-custom-dark text-white overflow-hidden pt-11">
+        <div className="relative w-full bg-custom-dark">
           <motion.div
             className="absolute top-0 w-full text-center text-6xl sm:text-8xl font-bold tracking-widest text-white whitespace-nowrap font-noto mt-16"
             animate={{

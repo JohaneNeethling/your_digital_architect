@@ -106,7 +106,7 @@ const skills = [
 // SkillsSection component to render the skills section on the page
 const SkillsSection = () => {
   return (
-    <div className="bg-black py-16 px-6 sm:px-12 md:px-24 text-white">
+    <div className="bg-custom-dark py-16 px-6 sm:px-12 md:px-24 text-white">
       {" "}
       {/* Background and padding for the section */}
       <div className="max-w-6xl mx-auto text-center">
@@ -118,7 +118,7 @@ const SkillsSection = () => {
           {skills.map((skill, index) => (
             <motion.div
               key={index} // Each skill gets a unique key
-              className="p-6 sm:p-8 shadow-xl hover:shadow-2xl transform transition-all hover:scale-105" // Styling and hover effects
+              className="p-6 sm:p-8 transform transition-all hover:scale-105" // Styling and hover effects
               initial={{ opacity: 0, y: 50 }} // Initial state: hidden and slightly below
               animate={{ opacity: 1, y: 0 }} // Animate to visible and normal position
               transition={{ duration: 1, delay: 0.2 * index }} // Transition effect with delay for staggered animation

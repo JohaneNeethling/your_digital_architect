@@ -57,7 +57,7 @@ const Navigation = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="fixed top-0 left-0 w-full h-full bg-black text-white flex flex-col items-center justify-center z-40"
+          className="fixed top-0 left-0 w-full h-full bg-custom-dark text-white flex flex-col items-center justify-center z-40"
         >
           {["Home", "Portfolio", "Why Me", "Get In Touch"].map(
             (item, index) => (

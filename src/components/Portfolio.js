@@ -74,7 +74,7 @@ const PortfolioSection = () => {
 
   return (
     <div>
-      <div className="bg-black text-white py-16 px-6 sm:px-12 md:px-24 font-noto pt-28">
+      <div className="bg-custom-dark text-white py-16 px-6 sm:px-12 md:px-24 font-noto pt-28">
         <div className="max-w-6xl mx-auto">
           {/* Heading for the Portfolio Section */}
           <motion.h2
@@ -143,7 +143,7 @@ const PortfolioSection = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-3 sm:px-6 sm:py-4 text-lg font-bold text-white border-custom-light border-2 bg-black rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-custom-light hover:shadow-2xl"
+                    className="px-5 py-3 sm:px-6 sm:py-4 text-lg font-bold text-white border-custom-light border-2 bg-custom-light rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-custom-light hover:shadow-2xl"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 }} // Button transition

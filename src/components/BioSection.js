@@ -5,7 +5,7 @@ import BeeBG from "../assets/BeeBg2.png"; // Import background image for the sec
 
 const BioSection = () => {
   return (
-    <div className="relative bg-black min-h-screen flex items-center justify-center px-6 sm:px-12 md:px-24 text-white">
+    <div className="relative bg-custom-dark min-h-screen flex items-center justify-center px-6 sm:px-12 md:px-24 text-white">
       {/* Main container with background color, full screen height, and centered content */}
 
       <div className="max-w-6xl mx-auto flex flex-col items-center md:flex-row md:items-start pt-36">

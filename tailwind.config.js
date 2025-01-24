@@ -7,7 +7,8 @@ module.exports = {
         noto: ["'Noto Serif Display'", "serif"],
       },
       colors: {
-        "custom-light": "#E6CF9B",
+        "custom-light": "#C2A28B",
+        "custom-dark": "#292F41",
       },
     },
   },
