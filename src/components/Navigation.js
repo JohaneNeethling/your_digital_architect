@@ -33,7 +33,7 @@ const Navigation = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-10 text-white text-xl">
-          {["Home", "Portfolio", "Why Me", "Get In Touch"].map(
+          {["Home", "Development", "Design", "Why Me", "Get In Touch"].map(
             (item, index) => (
               <motion.li
                 key={index}
@@ -59,7 +59,7 @@ const Navigation = () => {
           transition={{ duration: 0.3 }}
           className="fixed top-0 left-0 w-full h-full bg-custom-dark text-white flex flex-col items-center justify-center z-40"
         >
-          {["Home", "Portfolio", "Why Me", "Get In Touch"].map(
+          {["Home", "Development", "Design", "Why Me", "Get In Touch"].map(
             (item, index) => (
               <motion.div
                 key={index}

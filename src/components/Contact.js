@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser"; // Import EmailJS
 import BeeBG2 from "../assets/BeeBg2.png";
 
 const ContactSection = () => {
   const formRef = useRef(); // Reference to the form element
+  const [serviceType, setServiceType] = useState(""); // State to store selected service type
 
   const sendEmail = (e) => {
     e.preventDefault(); // Prevent default form submission
@@ -60,13 +61,17 @@ const ContactSection = () => {
               </strong>{" "}
               to build meaningful digital solutions. Whether you're looking to
               start a <strong className="text-custom-light">new</strong>{" "}
-              project, <strong className="text-custom-light">enhance</strong> an
+              project,
+              <strong className="text-custom-light"> enhance</strong> an
               existing one, or simply{" "}
               <strong className="text-custom-light">discuss ideas</strong>, I'm
-              here to help. As a dedicated full-stack developer, I bring a
-              combination of{" "}
+              here to help. As a dedicated full-stack developer and graphic
+              designer, I bring a combination of{" "}
               <strong className="text-custom-light">technical expertise</strong>{" "}
-              and a <strong className="text-custom-light">user-centric</strong>{" "}
+              and a{" "}
+              <strong className="text-custom-light">
+                creative, user-centric
+              </strong>{" "}
               approach to every project. Feel free to reach out—I’d love to
               learn more about your goals and how we can bring them to life{" "}
               <strong className="text-custom-light">together</strong>.
@@ -101,7 +106,30 @@ const ContactSection = () => {
                   required
                 />
               </div>
-
+              {/* Service Type Selection */}
+              <div>
+                <select
+                  name="serviceType"
+                  value={serviceType}
+                  onChange={(e) => setServiceType(e.target.value)}
+                  className="w-full p-4 bg-transparent text-white border-b-2 focus:outline-none"
+                  required
+                >
+                  <option value="">Select Service</option>
+                  <option value="webDev" className="text-custom-dark">
+                    Web Development
+                  </option>
+                  <option value="graphicDesign" className="text-custom-dark">
+                    Graphic Design
+                  </option>
+                  <option value="both" className="text-custom-dark">
+                    Both
+                  </option>
+                  <option value="enquire" className="text-custom-dark">
+                    Enquire
+                  </option>
+                </select>
+              </div>
               <div>
                 <textarea
                   name="message"

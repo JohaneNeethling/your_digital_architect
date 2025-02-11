@@ -5,6 +5,7 @@ import JeanAndre from "../assets/JeanAndre.png";
 import BoomBoxLogo from "../assets/BoomBoxLogo.png";
 import Plans from "../assets/PlansBack.png";
 import TLogo from "../assets/21Logo.png";
+import ArenaLogo from "../assets/Arena Logo Brand.jpg";
 import BeeBG3 from "../assets/BeeBg3.png";
 
 // Array of project objects, each with title, description, image, and link
@@ -22,6 +23,13 @@ const projects = [
       "Built with React and styled using Tailwind CSS, features a project gallery, a blog system for updates, and a functional contact form. Its elegant design, smooth animations, and backend integration highlight a strong focus on user experience and functionality.",
     image: Plans,
     link: "https://yene-van-jaarsveldt.onrender.com",
+  },
+  {
+    title: "Arena Restaurant",
+    description:
+      "Designed with a sleek dark-mode aesthetic accented by bold yellow highlights, this restaurant website delivers a modern and interactive user experience. Featuring an online venue booking system and a seamless food ordering menu, orders and reservations are conveniently sent via WhatsApp. The site also includes a captivating gallery, a spa treatment quote request function, and charming animations that enhance engagement. With its dynamic visuals and smooth interactivity, this project showcases strong UI/UX design and frontend/backend development skills.",
+    image: ArenaLogo,
+    link: "https://arena-restaurant.onrender.com/",
   },
   {
     title: "Twenty One Magazine",
@@ -75,25 +83,30 @@ const PortfolioSection = () => {
   return (
     <div>
       <div className="bg-custom-dark text-white py-16 px-6 sm:px-12 md:px-24 font-noto pt-28">
-        <div className="max-w-6xl mx-auto">
+        <div className="mx-auto">
           {/* Heading for the Portfolio Section */}
           <motion.h2
-            className="text-xl sm:text-8xl md:text-8xl font-extrabold font-noto mb-12 text-center text-custom-light tracking-widest mt-7"
+            className="text-xl sm:text-8xl md:text-8xl font-extrabold font-noto mb-12 text-center text-custom-light tracking-widest mt-32"
             initial={{ opacity: 0, y: -50 }} // Initial animation state
             animate={{ opacity: 1, y: 0 }} // Final animation state
             transition={{ duration: 1 }} // Transition timing
           >
-            BLUEPRINTS
+            Website Development Blueprints
           </motion.h2>
 
           {/* Paragraph describing the portfolio */}
           <motion.p
-            className="mt-4 text-lg sm:text-xl md:text-2xl leading-relaxed text-center font-noto"
+            className="mt-4 mb-36 text-lg sm:text-xl md:text-2xl leading-relaxed text-center font-noto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 0.6 }} // Animation with delay
           >
-            Every masterpiece begins with a blueprint...
+            Each project serves as a digital blueprint. I bring the same level
+            of precision and creativity to web development as I would to
+            designing a physical structure. Here, you’ll find a collection of
+            projects that showcase how I turn ideas into detailed, functional
+            blueprints that guide user experience and design, creating seamless,
+            impactful digital spaces."
           </motion.p>
 
           {/* Projects Grid */}

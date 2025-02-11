@@ -10,6 +10,7 @@ import HeroSection from "./components/HeroSection"; // Hero section of the page
 import BioSection from "./components/BioSection"; // Biography section
 import SkillsSection from "./components/Skills"; // Skills section
 import PortfolioSection from "./components/Portfolio"; // Portfolio section
+import GraphicPortfolioSection from "./components/GraphicPort"; // Graphic Portfolio section
 import Contact from "./components/Contact"; // Contact section
 import bee from "./assets/Bee.png"; // Bee image asset used for custom cursor
 import Footer from "./components/Footer"; // Footer component
@@ -117,11 +118,22 @@ const App = () => {
             }
           />
           <Route
-            path="/portfolio"
+            path="/development"
             element={
               <>
                 <Navigation />
                 <PortfolioSection />
+                <DocumentsSection />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/design"
+            element={
+              <>
+                <Navigation />
+                <GraphicPortfolioSection />
                 <DocumentsSection />
                 <Footer />
               </>
