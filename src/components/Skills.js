@@ -241,7 +241,8 @@ const SkillsSection = () => {
           transition={{ duration: 1.5, delay: 1.1 }}
         >
           <motion.a
-            href="/development"
+            Link
+            to="/development"
             className="bg-custom-light hover:bg-custom-dark border-custom-light border-2 text-white py-3 px-6 sm:px-8 rounded-lg text-lg font-semibold transform transition-all duration-300 ease-in-out shadow-lg hover:scale-105"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -306,8 +307,8 @@ const SkillsSection = () => {
           transition={{ duration: 1.5, delay: 1.1 }}
         >
           <motion.a
-            href="/design"
-            className="bg-custom-light hover:bg-custom-dark border-custom-light border-2 text-white py-3 px-6 sm:px-8 rounded-lg text-lg font-semibold transform transition-all duration-300 ease-in-out shadow-lg hover:scale-105"
+            Link
+            to="/design"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
